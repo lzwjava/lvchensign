@@ -31,3 +31,27 @@ header.masthead {
     }
   }
 }
+
+#carouselIndicators {
+
+  padding-top: $navbar-height;
+  // padding-bottom: calc(10rem - #{$navbar-height});
+
+  img {
+    height: 60vh;
+    min-height: 60vh;
+    object-fit: cover;
+  }
+
+  @include media-breakpoint-up(lg) {
+    // height: 100vh;
+    // min-height: 40rem;
+    padding-top: 0;
+
+    img {
+      height: 100vh;
+      min-height: 40rem;
+    }
+  }
+
+}

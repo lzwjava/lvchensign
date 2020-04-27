@@ -39,6 +39,27 @@
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
+  // var masthead = $('#masthead');
+  // var backgrounds = [
+  //   "url('../assets/img/bg-masthead.jpg')", 
+  //   "url('../assets/img/gucci.jpg')"];
+  // var current = 0;
+  // var duration = 5000;
+
+  // function nextBackground() {
+
+  //   masthead.fadeTo('fast', 0.3, function()
+  //   {
+  //     $(this).css('background-image', backgrounds[current = ++current % backgrounds.length]);
+  //   }).fadeTo('slow', 1);
+
+  //   setTimeout(nextBackground, duration);
+  // }
+
+  // setTimeout(nextBackground, duration);
+
+  // masthead.css('background-image', backgrounds[current]);  
+
   // Magnific popup calls
   // $('#portfolio').magnificPopup({
   //   delegate: 'a',
@@ -53,7 +74,7 @@
   //   image: {
   //     tError: '<a href="%url%"> 图片 #%curr%</a> 加载失败。'
   //   }
-  // });
+  // });  
 
   var basicOptions = {
     type: 'image',
@@ -71,13 +92,13 @@
 
   var clients = [
     {
+      name: 'shiye',
+      picsNum: 4
+    },
+    {
       name: 'zhoushengsheng',
       picsNum: 7
     },
-    {
-      name: 'shiye',
-      picsNum: 4
-    },    
     {
       name: 'chaoshan',
       picsNum: 2,
