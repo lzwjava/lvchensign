@@ -8,6 +8,14 @@
     font-weight: $font-weight-bold;
     color: $gray-900;
   }
+  .navbar-brand-logo {
+    &.logo-white {
+      display: none;
+    }
+    &.logo-black {
+      display: inline-block;
+    }
+  }  
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -36,6 +44,14 @@
         color: $white;
       }
     }
+    .navbar-brand-logo {
+      &.logo-white {
+        display: inline-block;
+      }
+      &.logo-black {
+        display: none;
+      }
+    }
     .navbar-nav {
       .nav-item {
         .nav-link {
@@ -60,6 +76,14 @@
         color: $gray-900;
         &:hover {
           color: $primary;
+        }
+      }
+      .navbar-brand-logo {
+        &.logo-white {
+          display: none;
+        }
+        &.logo-black {
+          display: inline-block;
         }
       }
       .navbar-nav {
