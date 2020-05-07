@@ -93,75 +93,93 @@
   var clients = [
     {
       name: 'shiye',
-      picsNum: 4
+      picsNum: 4,
+      title: '背发光字，严谨匠心工艺，高于小作坊标准。'
     },
     {
       name: 'zhoushengsheng',
-      picsNum: 7
+      picsNum: 7,
+      title: '藏露结合，方圆带势。'
     },
     {
       name: 'chaoshan',
       picsNum: 2,
+      title: '丰富LED灯光颜色，提供个性化定制。'
     },
     {
       name: 'dinglong',
-      picsNum: 5
+      picsNum: 5,
+      title: '用料安全，做工精细。'
     },
     {
       name: 'gxg.kids',
-      picsNum: 2
+      picsNum: 2,
+      title: '亮度完美，整体发光均匀。'
     },
     {
       name: 'qianwei',
-      picsNum: 2
+      picsNum: 2,
+      title: '定制发光字，图案字体精致，金属边框，色彩好看。'
     },
     {
       name: 'salon',
-      picsNum: 4
+      picsNum: 4,
+      title: '醒目的广告牌。'
     },
     {
       name: 'taier',
-      picsNum: 2
+      picsNum: 2,
+      title: '图案字体精致，款式高档。'
     },
     {
       name: 'taixing',
-      picsNum: 4
+      picsNum: 4,
+      title: '很炫，光线很亮，字体有个性。'
     },
     {
       name: 'xingyihui',
-      picsNum: 2
+      picsNum: 2,
+      title: '高端大气上档次，做工精细，材料厚实。'
     },
     {
       name: 'zhuchongyun',
-      picsNum: 2
+      picsNum: 2,
+      title: '材质很好，不绣钢，发光亮度刚好合适，做工精美。'
     },
     {
       name: 'gac',
-      picsNum: 4
+      picsNum: 4,
+      title: '字体清晰立体。'
     },
     {
       name: 'rules',
-      picsNum: 5
+      picsNum: 5,
+      title: '字体工整，亮度刚好。'
     },
     {
       name: 'shanghai',
-      picsNum: 3
+      picsNum: 3,
+      title: '装出来效果杠杠滴。'
     },
     {
       name: 'wangxiang',
-      picsNum: 1
+      picsNum: 1,
+      title: '整个背景墙漂亮又大气。'
     },
     {
       name: 'gongfu',
-      picsNum: 1
+      picsNum: 1,
+      title: '高端大气，很漂亮非常好看。'
     },
     {
       name: 'mc.choice',
-      picsNum: 1
+      picsNum: 1,
+      title: '浑然天成，玲珑精致。'
     },
     {
       name: 'mingjiang',
-      picsNum: 1
+      picsNum: 1,
+      title: '低调的冷静。画龙点睛的轻奢质感，让您装修氛围体验更佳。'
     }
   ];
 
@@ -171,11 +189,12 @@
 
     for (var j = 0; j < clients[i].picsNum; j++) {
       items.push({
-        src: 'assets/img/portfolio/' + clients[i].name + '/' + (j+1) + '.jpg'
+        src: 'assets/img/portfolio/' + clients[i].name + '/' + (j+1) + '.jpg',
+        title: clients[i].title
       });
     }
 
-    // console.log(items);
+    console.log(items);
 
     $('#portfolio' + (i + 1)).magnificPopup({
       items: items,
@@ -188,7 +207,10 @@
         preload: [0, 1]
       },
       image: {
-        tError: '<a href="%url%"> 图片 #%curr%</a> 加载失败。'
+        tError: '<a href="%url%"> 图片 #%curr%</a> 加载失败。',
+        titleSrc: function(item) {
+          return item.title;
+        }
       }
     });
   }
