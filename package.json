@@ -1,7 +1,7 @@
 {
     "title": "lvchensign",
     "name": "lvchensign",
-    "version": "6.0.1",
+    "version": "1.0",
     "scripts": {
         "build": "npm run clean && npm run build:html && npm run build:scss && npm run build:scripts && npm run build:assets",
         "build:assets": "node scripts/build-assets.js",
@@ -22,19 +22,16 @@
         "theme",
         "template"
     ],
-    "homepage": "https://startbootstrap.com/themes/creative",
+    "homepage": "https://github.com/lzwjava/lvchensign",
     "bugs": {
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative/issues",
-        "email": "feedback@startbootstrap.com"
+        "url": "https://github.com/lzwjava/lvchensign/issues",
+        "email": "lzwjava@gmail.com"
     },
     "license": "MIT",
-    "author": "Start Bootstrap",
-    "contributors": [
-        "David Miller (http://davidmiller.io/)"
-    ],
+    "author": "lzwjava",
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-creative.git"
+        "url": "git@github.com:lzwjava/lvchensign.git"
     },
     "dependencies": {
         "bootstrap": "4.4.1"
