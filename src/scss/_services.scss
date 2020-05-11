@@ -65,7 +65,7 @@ $background-portfolio: #fff;
 
 #portfolio {
   background-color: transparent;
-  background: linear-gradient(to bottom, #{fade-out($background-portfolio, .5)} 0%, #{fade-out($background-portfolio, .5)} 100%), url('../assets/img/section/joshua.jpg');
+  background: linear-gradient(to bottom, #{fade-out($background-portfolio, 0.1)} 0%, #{fade-out($background-portfolio, 0.5)} 100%), url('../assets/img/section/shifaaz.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
