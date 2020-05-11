@@ -10,3 +10,98 @@
 #portfolio {
   padding-bottom: 3rem !important;
 }
+
+$background-outline: #0C1D3E;
+
+#outline {
+  background-color: transparent;
+  background: linear-gradient(to bottom, #{fade-out($background-outline, .2)} 0%, #{fade-out($background-outline, .2)} 100%), url('../assets/img/section/mountain.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  .road-title {
+    font-family:Comic Sans MS, cursive, "Microsoft YaHei";
+  }
+
+  .road-container {
+
+    .road-desktop {
+      display: none;
+    }
+
+    .road-mobile {
+      display: block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      .road-desktop {
+        display: block;        
+      }
+
+      .road-mobile {
+        display: none;
+      }
+    }
+
+    // .road-line-dot {
+    //   position: absolute;
+    //   margin-top: 16%;
+    //   margin-left: -21px;
+    // }
+
+    // .lukla {
+    //   position: absolute;
+    //   font-family:Comic Sans MS,cursive;
+    //   font-size: 24px;
+    //   margin-top: 140px;
+    //   margin-left: -35px;
+    // }
+  }
+}
+
+$background-portfolio: #fff;
+
+#portfolio {
+  background-color: transparent;
+  background: linear-gradient(to bottom, #{fade-out($background-portfolio, .5)} 0%, #{fade-out($background-portfolio, .5)} 100%), url('../assets/img/section/joshua.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;  
+}
+
+$background-about: #0C1D3E;
+
+#about {
+  background-color: transparent;
+  background: linear-gradient(to bottom, #{fade-out($background-about, .3)} 0%, #{fade-out($background-about, .3)} 100%), url('../assets/img/section/julian.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;
+
+  .text-intro {
+    p+p {
+      margin-top: 1.5rem;
+    }    
+  }
+
+}
+
+$background-contact: #fff;
+
+#contact {
+  background-color: transparent;
+  background: linear-gradient(to bottom, #{fade-out($background-contact, .3)} 0%, #{fade-out($background-contact, .3)} 100%), url('../assets/img/section/mathyas.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-size: cover;  
+  img.svg-img {
+    width: 4rem;
+    height: 4rem;    
+  }  
+  padding: 8rem 0 4rem 0;
+}
