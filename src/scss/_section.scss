@@ -81,7 +81,7 @@ $background-about: #fff;
 
 #about {
   background-color: transparent;
-  background: linear-gradient(to bottom, #{fade-out($background-about, 0.2)} 0%, #{fade-out($background-about, 0.2)} 100%), url('../assets/img/section/jay.jpg');
+  background: linear-gradient(to bottom, #{fade-out($background-about, 1)} 0%, #{fade-out($background-about, 1)} 100%), url('../assets/img/section/about.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
