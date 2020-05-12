@@ -194,7 +194,7 @@
       });
     }
 
-    console.log(items);
+    // console.log(items);
 
     $('#portfolio' + (i + 1)).magnificPopup({
       items: items,

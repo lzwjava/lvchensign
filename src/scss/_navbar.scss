@@ -8,6 +8,11 @@
     font-weight: $font-weight-bold;
     color: $gray-900;
   }
+  .mobile-collapse {
+    flex-basis: 100%;
+    flex-grow: 1;
+    align-items: center;
+  }
   .navbar-brand-logo {
     &.logo-white {
       display: none;
@@ -15,7 +20,10 @@
     &.logo-black {
       display: inline-block;
     }
-  }  
+  }
+  .mobile-brand {
+    display: block;
+  }
   .navbar-nav {
     .nav-item {
       .nav-link {
@@ -45,7 +53,7 @@
         color: $white;
         opacity: 1;
       }
-    }
+    }    
     .navbar-brand-logo {
       &.logo-white {
         display: inline-block;
@@ -69,6 +77,9 @@
           }
         }
       }
+    }
+    .mobile-brand {
+      display: none;
     }
     // Navbar styling applied when the page is scrolled
     &.navbar-scrolled {

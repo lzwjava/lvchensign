@@ -65,18 +65,18 @@ $background-portfolio: #fff;
 
 #portfolio {
   background-color: transparent;
-  background: linear-gradient(to bottom, #{fade-out($background-portfolio, 0.1)} 0%, #{fade-out($background-portfolio, 0.5)} 100%), url('../assets/img/section/shifaaz.jpg');
+  background: linear-gradient(to bottom, #{fade-out($background-portfolio, 0.3)} 0%, #{fade-out($background-portfolio, 0.3)} 100%), url('../assets/img/section/omer.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;  
 }
 
-$background-about: #0C1D3E;
+$background-about: #376351;
 
 #about {
   background-color: transparent;
-  background: linear-gradient(to bottom, #{fade-out($background-about, .3)} 0%, #{fade-out($background-about, .3)} 100%), url('../assets/img/section/julian.jpg');
+  background: linear-gradient(to bottom, #{fade-out($background-about, .5)} 0%, #{fade-out($background-about, .3)} 100%), url('../assets/img/section/jay.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -85,7 +85,8 @@ $background-about: #0C1D3E;
   .text-intro {
     p+p {
       margin-top: 1.5rem;
-    }    
+    }
+    color: rgba($color: #fff, $alpha: 0.9);
   }
 
 }
