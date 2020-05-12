@@ -22,7 +22,11 @@
     }
   }
   .mobile-brand {
-    display: block;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    .navbar-brand-logo {
+      height: 3rem;
+    }
   }
   .navbar-nav {
     .nav-item {
@@ -76,9 +80,6 @@
           }
         }
       }
-    }
-    .mobile-brand {
-      display: none;
     }
     // Navbar styling applied when the page is scrolled
     &.navbar-scrolled {
