@@ -22,7 +22,12 @@ $background-outline: #0C1D3E;
   background-size: cover;
 
   .road-title {
-    font-family:Comic Sans MS, cursive, "Microsoft YaHei";
+    .title-en {
+      font-family:Comic Sans MS, cursive, "Microsoft YaHei";
+    }
+    .title-cn {
+      letter-spacing: 1.5rem;
+    }
   }
 
   .road-container {
@@ -65,18 +70,18 @@ $background-portfolio: #fff;
 
 #portfolio {
   background-color: transparent;
-  background: linear-gradient(to bottom, #{fade-out($background-portfolio, 0.3)} 0%, #{fade-out($background-portfolio, 0.3)} 100%), url('../assets/img/section/omer.jpg');
+  background: linear-gradient(to bottom, #{fade-out($background-portfolio, 0.1)} 0%, #{fade-out($background-portfolio, 0.1)} 100%), url('../assets/img/section/omer.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;  
 }
 
-$background-about: #376351;
+$background-about: #fff;
 
 #about {
   background-color: transparent;
-  background: linear-gradient(to bottom, #{fade-out($background-about, .5)} 0%, #{fade-out($background-about, .3)} 100%), url('../assets/img/section/jay.jpg');
+  background: linear-gradient(to bottom, #{fade-out($background-about, 0.2)} 0%, #{fade-out($background-about, 0.2)} 100%), url('../assets/img/section/jay.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -86,7 +91,7 @@ $background-about: #376351;
     p+p {
       margin-top: 1.5rem;
     }
-    color: rgba($color: #fff, $alpha: 0.9);
+    // color: rgb($color: #000);
   }
 
 }
@@ -101,11 +106,14 @@ $background-contact: #fff;
   background-attachment: scroll;
   background-size: cover;  
   img.svg-img {
-    width: 4rem;
-    height: 4rem;    
+    width: 6rem;
+    height: 6rem;    
   }  
   padding: 8rem 0 4rem 0;
   .contact-row {
     font-size: larger;
+  }
+  .ready-en-title {
+    font-family: Comic Sans MS, cursive, "Microsoft YaHei";    
   }
 }
