@@ -189,8 +189,8 @@
 
     for (var j = 0; j < clients[i].picsNum; j++) {
       items.push({
-        src: 'assets/img/portfolio/' + clients[i].name + '/' + (j+1) + '.jpg',
-        title: clients[i].title
+        src: 'assets/img/portfolio/' + clients[i].name + '/' + (j+1) + '.jpg'
+        // title: clients[i].title
       });
     }
 
@@ -209,7 +209,8 @@
       image: {
         tError: '<a href="%url%"> 图片 #%curr%</a> 加载失败。',
         titleSrc: function(item) {
-          return item.title;
+          return '';
+          // return item.title;
         }
       }
     });
