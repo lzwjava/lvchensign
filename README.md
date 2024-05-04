@@ -2,6 +2,8 @@
 
 Welcome to LvchenSign Advertising's website! 
 
+![img](./readme/lvchensign.jpg)
+
 ## Overview
 
 LvchenSign specializes in the production of advertising signage for various businesses and events. With a focus on quality and creativity, we strive to deliver impactful visual solutions that elevate brands and captivate audiences.
